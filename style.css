@@ -1,3 +1,11 @@
+@font-face {
+    font-family: myfont1;
+    src: url(cannet.otf);
+}
+@font-face {
+    font-family: myfont2;
+    src: url(cyberCity.otf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -37,11 +45,11 @@
 }
 .header h1{
     position: absolute;
-    top: 12rem;
+    top: 18rem;
     /* color: #1a8deb; */
     color: white;
-    font-family:cursive;
-    font-size: 12rem;
+    font-family:myfont2;
+    font-size: 8rem;
     text-shadow: 0 0 10px rgba(0,0,0,1);
     letter-spacing: 6px;
     
@@ -72,9 +80,11 @@ section{
     background-image: url(seoul.jpg);
 }
 .secHeading{
-    font-size: 10rem;
+    font-family: myfont2;
+    margin-left: 2rem;
+    font-size: 5rem;
     color: white;
-    padding: o 3rem;
+    padding: o 2rem;
 }
 .text{
     font-size: 1.5rem;
@@ -82,14 +92,16 @@ section{
     margin: 5rem 0;
 }
 .desc{
+    font-family: myfont1;
     position: absolute;
-    background-color: white;
+    background-color: rgba(255, 255, 255,0.2);
+    letter-spacing: 6px;
     color: black;
     padding: 0.5rem 2.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 30px black;
 
 }
