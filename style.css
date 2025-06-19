@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    
+}
+.header{
+    position: relative;
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    /* used to resize <img> or <video> tag according to container */
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-60px) scale(8);
+
+}
+.foreground{
+    transform: translateZ(-15px) scale(2.6);
+    
+}
+.header h1{
+    position: absolute;
+    top: 12rem;
+    /* color: #1a8deb; */
+    color: white;
+    font-family:cursive;
+    font-size: 12rem;
+    text-shadow: 0 0 10px rgba(0,0,0,1);
+    letter-spacing: 6px;
+    
+}
+section{
+    position: absolute;
+    background-color:rgb(0, 0, 0);
+    
+    color: white;
+    padding: 5rem 0;
+    width: 100vw;
+}
+.bg{
+    position: relative;
+    width: 100vw;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background-image: url(seattle.jpg);
+}
+.bg2{
+    background-image: url(metropolis.jpg);
+}
+.bg3{
+    background-image: url(seoul.jpg);
+}
+.secHeading{
+    font-size: 10rem;
+    color: white;
+    padding: o 3rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 2.5rem;
+    font-size: 3.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 0 10px black;
+
+}
